@@ -5,24 +5,28 @@ app = Flask(__name__)
 def welcome():
 	return render_template('welcome.html')
 
+@app.route("/create-form")
+def createForm():
+   return render_template('create.html')
+
 @app.route("/create-task")
-def function():
+def createTask():
 	return
 
 @app.route("/update-task")
-def function():
+def updateTask():
 	return
 
 @app.route("/delete-task")
-def function():
+def deleteTask():
 	return
 
 @app.route("/get-task")
-def function():
+def getTask():
 	return
 
 @app.route("/get-tasks")
-def function():
+def getTasks():
 	return
 
 @app.route('/hello/<name>')
